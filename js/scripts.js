@@ -23,3 +23,14 @@ Pizza.prototype.addTopping = function() {
 Pizza.prototype.totalCost = function() {
   return this.totalPrice = this.dimension + this.topping;
 };
+
+$(document).ready(function() { 
+  var inputtedDimension =$("select#dimension").val();
+  
+  var inputtedToppingAmount =$(this).find("input.topping-number").val();
+  var inputtedTopping =$("select#topping").val();
+
+  if(inputtedDimension === "small" && inputtedTopping === "topping") {
+  	var toppingAmount = parseInt(inputtedToppingAmount);
+  
+}
