@@ -10,3 +10,7 @@ Pizza.prototype.smallDimension = function () {
 Pizza.prototype.mediumDimension = function () {
   return this.dimension = 8;
 };
+
+Pizza.prototype.largeDimension = function () {
+  return this.dimension = 12;
+};

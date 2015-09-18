@@ -10,8 +10,13 @@ describe('Pizza', function () {
     expect(testPizza.smallDimension()).to.equal(5);
   });
 
-   it("returns base price of a medium pizza", function () {
+  it("returns base price of a medium pizza", function () {
     var testPizza = new Pizza("Medium");
     expect(testPizza.mediumDimension()).to.equal(8);
+  });
+
+  it("returns base price of a large pizza", function () {
+    var testPizza = new Pizza("Large");
+    expect(testPizza.largeDimension()).to.equal(12);
   });
 });
