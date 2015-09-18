@@ -1,6 +1,7 @@
-function Pizza(dimension) {
+function Pizza(dimension,topping) {
   this.dimension = dimension;
-  this.topping = 2;
+  this.topping = 0;
+  this.totalPrice = null;
 }
 
 Pizza.prototype.smallDimension = function () {
@@ -15,4 +16,10 @@ Pizza.prototype.largeDimension = function () {
   return this.dimension = 12;
 };
 
+Pizza.prototype.addTopping = function() {
+  return this.topping += 2;
+};
 
+Pizza.prototype.totalCost = function() {
+  return this.totalPrice = this.dimension + this.topping;
+};
