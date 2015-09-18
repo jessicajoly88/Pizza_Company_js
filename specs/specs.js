@@ -1,8 +1,8 @@
 describe('Pizza', function () {
   it("creates a new pizza", function () {
-  	var testPizza = new Pizza("Medium");
+  	var testPizza = new Pizza("Medium","Topping");
   	expect(testPizza.dimension).to.equal("Medium");
-  	expect(testPizza.toppings).to.eql([]);
+  	expect(testPizza.topping).to.equal(2);
   });
 
   it("returns base price of a small pizza", function () {
@@ -19,4 +19,6 @@ describe('Pizza', function () {
     var testPizza = new Pizza("Large");
     expect(testPizza.largeDimension()).to.equal(12);
   });
+  
+
 });

@@ -1,6 +1,6 @@
 function Pizza(dimension) {
   this.dimension = dimension;
-  this.toppings = [];
+  this.topping = 2;
 }
 
 Pizza.prototype.smallDimension = function () {
@@ -14,3 +14,5 @@ Pizza.prototype.mediumDimension = function () {
 Pizza.prototype.largeDimension = function () {
   return this.dimension = 12;
 };
+
+
