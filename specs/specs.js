@@ -5,4 +5,8 @@ describe('Pizza', function () {
   	expect(testPizza.toppings).to.eql([]);
   });
 
+  it("returns base price of a small pizza", function () {
+    var testPizza = new Pizza("Small");
+    expect(testPizza.smallDimension()).to.equal(5);
+  });
 });
