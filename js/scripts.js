@@ -62,5 +62,6 @@ $(document).ready(function() {
   	  var totalPizzaCost = basePrice + toppingTotal;
       $("#pizza-price").text("Total Amount" + " $" + totalPizzaCost);	 
     } 
-  });
+    $("input.topping-number").val("");  
+  });  
 });
