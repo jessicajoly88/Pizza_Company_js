@@ -35,3 +35,11 @@ describe('Pizza', function () {
   	expect(testPizza.totalPrice).to.equal(7);
   });
 });
+
+//describe('Order', function () {
+  //it("creates a new order", function () {
+  //  var testOrder = new Order(pizza);
+    //expect(testOrder.pizza).to.equal("Pizza 1");
+   //expect(testOrder.totalPrice).to.equal(7); 
+  //});
+//}); 

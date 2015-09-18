@@ -24,13 +24,11 @@ Pizza.prototype.totalCost = function() {
   return this.totalPrice = this.dimension + this.topping;
 };
 
-
 $(document).ready(function() { 
   $("#pizza-price").hide();
   $("form.pizza-order").submit(function(event) {
     event.preventDefault();
     $("#pizza-price").show();
-
   
     var inputtedDimension =$("select#dimension").val();
   
