@@ -44,7 +44,7 @@ $(document).ready(function() {
   	  var topping = newPizza.addTopping();
   	  var toppingTotal = topping * toppingAmount;
   	  var totalPizzaCost = basePrice + toppingTotal;	
-  	  $("#pizza-price").text("Total Amount" + " $" + totalPizzaCost);
+  	  $("#pizza-price").text("Thank you for your order!" + " Total due is" + " $" + totalPizzaCost);
     }
     else if (inputtedDimension === "medium" && inputtedTopping === "topping") {
       var basePrice = newPizza.mediumDimension();
@@ -52,7 +52,7 @@ $(document).ready(function() {
   	  var topping = newPizza.addTopping();
   	  var toppingTotal = topping * toppingAmount;
   	  var totalPizzaCost = basePrice + toppingTotal;
-  	  $("#pizza-price").text("Total Amount" + " $" + totalPizzaCost);	 
+  	  $("#pizza-price").text("Thank you for your order!" + " Total due is" + " $" + totalPizzaCost);	 
     }
     else if (inputtedDimension === "large" && inputtedTopping === "topping") {
       var basePrice = newPizza.largeDimension();
@@ -60,7 +60,7 @@ $(document).ready(function() {
   	  var topping = newPizza.addTopping();
   	  var toppingTotal = topping * toppingAmount;
   	  var totalPizzaCost = basePrice + toppingTotal;
-      $("#pizza-price").text("Total Amount" + " $" + totalPizzaCost);	 
+      $("#pizza-price").text("Thank you for your order!" + " Total due is" + " $" + totalPizzaCost);	 
     } 
     $("input.topping-number").val("");  
   });  
